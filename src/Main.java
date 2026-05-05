@@ -43,11 +43,14 @@ class Main {
                 }
             }
         }
-        //System.out.println("Anzahl Nicht Gut: " + Arrays.toString(nicht_gut));
-        System.out.println("Nicht Gut: " + counter_1);
-        //System.out.println("Anzahl Gut: " + Arrays.toString(gut));
-        System.out.println("Gut: " + counter_2);
-        //System.out.println("Anzahl Sehr Gut: " + Arrays.toString(sehr_gut));
-        System.out.println("Sehr Gut: " + counter_3);
+
+        double proz_1 = (double) counter_1 / n * 100;
+        double proz_2 = (double) counter_2 / n * 100;
+        double proz_3 = (double) counter_3 / n * 100;
+
+
+        System.out.printf("Nicht Gut: %d (%.2f%%)%n", counter_1, proz_1);
+        System.out.printf("Gut:       %d (%.2f%%)%n", counter_2, proz_2);
+        System.out.printf("Sehr Gut:  %d (%.2f%%)%n", counter_3, proz_3);
     }
 }
